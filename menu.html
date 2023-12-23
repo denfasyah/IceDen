@@ -1,146 +1,387 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link href="dist/app.css" rel="stylesheet">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="dist/app.css" rel="stylesheet" />
+  </head>
 
-<body class="bg-slate-200">
-  
-   <!-- navbar -->
-<div class="banner">
-  <div class="navbar bg-pink-500 shadow-md fixed z-30">
-    <div class="container navbar-start">
-      <a href="/" class="btn btn-ghost text-xl text-white">IceDen</a>
-    </div>
-    <div class="navbar-center hidden lg:flex">
-      <ul class="menu menu-horizontal px-1">
-        <li><a href="/" class="text-white transition duration-300 ease-in-out hover:bg-primary focus:bg-primary">Home</a></li>
-        <li><a href="#about" class="text-white transition duration-300 ease-in-out hover:bg-primary focus:bg-primary">About</a></li>
-        <li><a href="menu.html" class="text-white transition duration-300 ease-in-out hover:bg-primary focus:bg-primary">Menu</a></li>
-        <li><a href="#testimonial" class="text-white transition duration-300 ease-in-out hover:bg-primary focus:bg-primary">Testimonial</a></li>
-        <li><a href="#contact" class="text-white transition duration-300 ease-in-out hover:bg-primary focus:bg-primary">Contact</a></li>
-      </ul>
-    </div>
-    <div class="container navbar-end relative">
-      <div class="dropdown">
-        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-white font-bold" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+  <body class="bg-slate-200">
+    <!-- navbar -->
+    <div class="banner">
+      <div class="navbar bg-pink-500 shadow-md fixed z-30">
+        <div class="container navbar-start">
+          <a href="/" class="btn btn-ghost text-xl text-white">IceDen</a>
         </div>
-        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52 overflow-y-auto right-0 origin-top-right absolute bg-base-100">
-          <li><a class="text-white hover:bg-primary focus:bg-primary">Home</a></li>
-          <li><a class="text-white hover:bg-primary focus:bg-primary">About</a></li>
-          <li><a class="text-white hover:bg-primary focus:bg-primary">Menu</a></li>
-          <li><a class="text-white hover:bg-primary focus:bg-primary">Testimonial</a></li>
-          <li><a class="text-white hover:bg-primary focus:bg-primary">Contact</a></li>
-        </ul>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li>
+              <a
+                href="/"
+                class="text-white transition duration-300 ease-in-out hover:bg-primary focus:bg-primary"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="text-white transition duration-300 ease-in-out hover:bg-primary focus:bg-primary"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="menu.html"
+                class="text-white transition duration-300 ease-in-out hover:bg-primary focus:bg-primary"
+                >Menu</a
+              >
+            </li>
+            <li>
+              <a
+                href="#testimonial"
+                class="text-white transition duration-300 ease-in-out hover:bg-primary focus:bg-primary"
+                >Testimonial</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="text-white transition duration-300 ease-in-out hover:bg-primary focus:bg-primary"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="container navbar-end relative">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-7 w-7 text-white font-bold"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52 overflow-y-auto right-0 origin-top-right absolute bg-base-100"
+            >
+              <li>
+                <a class="text-white hover:bg-primary focus:bg-primary">Home</a>
+              </li>
+              <li>
+                <a class="text-white hover:bg-primary focus:bg-primary"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a class="text-white hover:bg-primary focus:bg-primary">Menu</a>
+              </li>
+              <li>
+                <a class="text-white hover:bg-primary focus:bg-primary"
+                  >Testimonial</a
+                >
+              </li>
+              <li>
+                <a class="text-white hover:bg-primary focus:bg-primary"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-<!-- end navbar -->
+    <br> <br>
+    <!-- end navbar -->
 
-<!-- hero -->
-<div class="carousel w-full">
-  <div id="slide1" class="carousel-item relative w-full">
-    <img src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" class="w-full" />
-    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide4" class="btn btn-circle bg-primary">❮</a> 
-      <a href="#slide2" class="btn btn-circle bg-primary">❯</a>
+    <!-- hero -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e7008a" fill-opacity="1" d="M0,96L10.9,117.3C21.8,139,44,181,65,176C87.3,171,109,117,131,112C152.7,107,175,149,196,149.3C218.2,149,240,107,262,112C283.6,117,305,171,327,213.3C349.1,256,371,288,393,288C414.5,288,436,256,458,234.7C480,213,502,203,524,176C545.5,149,567,107,589,122.7C610.9,139,633,213,655,213.3C676.4,213,698,139,720,133.3C741.8,128,764,192,785,208C807.3,224,829,192,851,197.3C872.7,203,895,245,916,229.3C938.2,213,960,139,982,117.3C1003.6,96,1025,128,1047,138.7C1069.1,149,1091,139,1113,154.7C1134.5,171,1156,213,1178,224C1200,235,1222,213,1244,197.3C1265.5,181,1287,171,1309,170.7C1330.9,171,1353,181,1375,192C1396.4,203,1418,213,1429,218.7L1440,224L1440,0L1429.1,0C1418.2,0,1396,0,1375,0C1352.7,0,1331,0,1309,0C1287.3,0,1265,0,1244,0C1221.8,0,1200,0,1178,0C1156.4,0,1135,0,1113,0C1090.9,0,1069,0,1047,0C1025.5,0,1004,0,982,0C960,0,938,0,916,0C894.5,0,873,0,851,0C829.1,0,807,0,785,0C763.6,0,742,0,720,0C698.2,0,676,0,655,0C632.7,0,611,0,589,0C567.3,0,545,0,524,0C501.8,0,480,0,458,0C436.4,0,415,0,393,0C370.9,0,349,0,327,0C305.5,0,284,0,262,0C240,0,218,0,196,0C174.5,0,153,0,131,0C109.1,0,87,0,65,0C43.6,0,22,0,11,0L0,0Z"></path></svg>
+
+    <!-- end hero -->
+
+    <!-- menu -->
+
+    <!-- new menu -->
+    <h1 class="text-center mt-20 font-bold text-4xl text-primary">Menu</h1>
+    <div class="mt-20 pb-20">
+      <div class="container">
+        <h1 class="font-semi-bold text-4xl text-primary">New</h1>
+        <div class="carousel carousel-end rounded-box mt-14">
+          <div class="relative carousel-item">
+            <h1
+              class="absolute right-0 bottom-0 text-1xl text-slate-50 font-bold bg-pink-700 p-2 rounded-md"
+            >
+              Ice Lorem
+            </h1>
+            <img src="dist/img/iceBlue.png" alt="Drink" class="w-72" />
+            <p
+              class="absolute left-0 top-0 p-2 shadow-sm rounded-e-md bg-pink-700 font-bold text-white"
+            >
+              New
+            </p>
+          </div>
+          <div class="relative carousel-item">
+            <h1
+              class="absolute right-0 bottom-0 text-1xl text-slate-50 font-bold bg-pink-700 p-2 rounded-md"
+            >
+              Ice Lorem
+            </h1>
+            <img src="dist/img/icePink2.png" alt="Drink" class="w-72" />
+            <p
+              class="absolute left-0 top-0 p-2 shadow-sm rounded-e-md bg-pink-700 font-bold text-white"
+            >
+              New
+            </p>
+          </div>
+          <div class="relative carousel-item">
+            <h1
+              class="absolute right-0 bottom-0 text-1xl text-slate-50 font-bold bg-pink-700 p-2 rounded-md"
+            >
+              Ice Lorem
+            </h1>
+            <img src="dist/img/iceYellow.jpeg" class="w-72" alt="Drink" />
+            <p
+              class="absolute left-0 top-0 p-2 shadow-sm rounded-e-md bg-pink-700 font-bold text-white"
+            >
+              New
+            </p>
+          </div>
+          <div class="relative carousel-item">
+            <h1
+              class="absolute right-0 bottom-0 text-1xl text-slate-50 font-bold bg-pink-700 p-2 rounded-md"
+            >
+              Ice Lorem
+            </h1>
+            <img src="dist/img/iceGreen.jpeg" class="w-72" alt="Drink" />
+            <p
+              class="absolute left-0 top-0 p-2 shadow-sm rounded-e-md bg-pink-700 font-bold text-white"
+            >
+              New
+            </p>
+          </div>
+          <div class="relative carousel-item">
+            <h1
+              class="absolute right-0 bottom-0 text-1xl text-slate-50 font-bold bg-pink-700 p-2 rounded-md"
+            >
+              Ice Lorem
+            </h1>
+            <img src="dist/img/icePurple.png" class="w-72" alt="Drink" />
+            <p
+              class="absolute left-0 top-0 p-2 shadow-sm rounded-e-md bg-pink-700 font-bold text-white"
+            >
+              New
+            </p>
+          </div>
+          <div class="relative carousel-item">
+            <h1
+              class="absolute right-0 bottom-0 text-1xl text-slate-50 font-bold bg-pink-700 p-2 rounded-md"
+            >
+              Ice Lorem
+            </h1>
+            <img src="dist/img/iceRed.png" class="w-72" alt="Drink" />
+            <p
+              class="absolute left-0 top-0 p-2 shadow-sm rounded-e-md bg-pink-700 font-bold text-white"
+            >
+              New
+            </p>
+          </div>
+          <div class="relative carousel-item">
+            <h1
+              class="absolute right-0 bottom-0 text-1xl text-slate-50 font-bold bg-pink-700 p-2 rounded-md"
+            >
+              Ice Lorem
+            </h1>
+            <img src="dist/img/icePink2.png" class="w-72" alt="Drink" />
+            <p
+              class="absolute left-0 top-0 p-2 shadow-sm rounded-e-md bg-pink-700 font-bold text-white"
+            >
+              New
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div> 
-  <div id="slide2" class="carousel-item relative w-full">
-    <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
-    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide1" class="btn btn-circle">❮</a> 
-      <a href="#slide3" class="btn btn-circle">❯</a>
+    <!-- end new menu  -->
+
+    <!-- Vanilla -->
+      <div class="container">
+        <h1 class="font-semi-bold text-4xl text-primary">Macha</h1>
+        <div class="carousel carousel-end rounded-box mt-14">
+          <div class="relative carousel-item">
+            <h1
+              class="absolute right-0 bottom-0 text-1xl text-slate-50 font-bold bg-pink-700 p-2 rounded-md"
+            >
+              Ice Lorem
+            </h1>
+            <img src="dist/img/iceBlue.png" alt="Drink" class="w-72" />
+          </div>
+          <div class="relative carousel-item">
+            <h1
+              class="absolute right-0 bottom-0 text-1xl text-slate-50 font-bold bg-pink-700 p-2 rounded-md"
+            >
+              Ice Lorem
+            </h1>
+            <img src="dist/img/icePink2.png" alt="Drink" class="w-72" />
+          </div>
+          <div class="relative carousel-item">
+            <h1
+              class="absolute right-0 bottom-0 text-1xl text-slate-50 font-bold bg-pink-700 p-2 rounded-md"
+            >
+              Ice Lorem
+            </h1>
+            <img src="dist/img/iceYellow.jpeg" class="w-72" alt="Drink" />
+          </div>
+          <div class="relative carousel-item">
+            <h1
+              class="absolute right-0 bottom-0 text-1xl text-slate-50 font-bold bg-pink-700 p-2 rounded-md"
+            >
+              Ice Lorem
+            </h1>
+            <img src="dist/img/iceGreen.jpeg" class="w-72" alt="Drink" />
+          </div>
+          <div class="relative carousel-item">
+            <h1
+              class="absolute right-0 bottom-0 text-1xl text-slate-50 font-bold bg-pink-700 p-2 rounded-md"
+            >
+              Ice Lorem
+            </h1>
+            <img src="dist/img/icePurple.png" class="w-72" alt="Drink" />
+          </div>
+          <div class="relative carousel-item">
+            <h1
+              class="absolute right-0 bottom-0 text-1xl text-slate-50 font-bold bg-pink-700 p-2 rounded-md"
+            >
+              Ice Lorem
+            </h1>
+            <img src="dist/img/iceRed.png" class="w-72" alt="Drink" />
+          </div>
+          <div class="relative carousel-item">
+            <h1
+              class="absolute right-0 bottom-0 text-1xl text-slate-50 font-bold bg-pink-700 p-2 rounded-md"
+            >
+              Ice Lorem
+            </h1>
+            <img src="dist/img/icePink2.png" class="w-72" alt="Drink" />
+          </div>
+        </div>
+      </div>
     </div>
-  </div> 
-  <div id="slide3" class="carousel-item relative w-full">
-    <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
-    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide2" class="btn btn-circle">❮</a> 
-      <a href="#slide4" class="btn btn-circle">❯</a>
+    <!-- end Vanilla  -->
+
+    <!-- Vanilla -->
+      <div class="container mt-20">
+        <h1 class="font-semi-bold text-4xl text-primary">Vanilla</h1>
+        <div class="carousel carousel-end rounded-box mt-14">
+          <div class="relative carousel-item">
+            <h1
+              class="absolute right-0 bottom-0 text-1xl text-slate-50 font-bold bg-pink-700 p-2 rounded-md"
+            >
+              Ice Lorem
+            </h1>
+            <img src="dist/img/iceBlue.png" alt="Drink" class="w-72" />
+          </div>
+          <div class="relative carousel-item">
+            <h1
+              class="absolute right-0 bottom-0 text-1xl text-slate-50 font-bold bg-pink-700 p-2 rounded-md"
+            >
+              Ice Lorem
+            </h1>
+            <img src="dist/img/icePink2.png" alt="Drink" class="w-72" />
+          </div>
+          <div class="relative carousel-item">
+            <h1
+              class="absolute right-0 bottom-0 text-1xl text-slate-50 font-bold bg-pink-700 p-2 rounded-md"
+            >
+              Ice Lorem
+            </h1>
+            <img src="dist/img/iceYellow.jpeg" class="w-72" alt="Drink" />
+          </div>
+          <div class="relative carousel-item">
+            <h1
+              class="absolute right-0 bottom-0 text-1xl text-slate-50 font-bold bg-pink-700 p-2 rounded-md"
+            >
+              Ice Lorem
+            </h1>
+            <img src="dist/img/iceGreen.jpeg" class="w-72" alt="Drink" />
+          </div>
+          <div class="relative carousel-item">
+            <h1
+              class="absolute right-0 bottom-0 text-1xl text-slate-50 font-bold bg-pink-700 p-2 rounded-md"
+            >
+              Ice Lorem
+            </h1>
+            <img src="dist/img/icePurple.png" class="w-72" alt="Drink" />
+          </div>
+          <div class="relative carousel-item">
+            <h1
+              class="absolute right-0 bottom-0 text-1xl text-slate-50 font-bold bg-pink-700 p-2 rounded-md"
+            >
+              Ice Lorem
+            </h1>
+            <img src="dist/img/iceRed.png" class="w-72" alt="Drink" />
+          </div>
+          <div class="relative carousel-item">
+            <h1
+              class="absolute right-0 bottom-0 text-1xl text-slate-50 font-bold bg-pink-700 p-2 rounded-md"
+            >
+              Ice Lorem
+            </h1>
+            <img src="dist/img/icePink2.png" class="w-72" alt="Drink" />
+          </div>
+        </div>
+      </div>
     </div>
-  </div> 
-  <div id="slide4" class="carousel-item relative w-full">
-    <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
-    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide3" class="btn btn-circle">❮</a> 
-      <a href="#slide1" class="btn btn-circle">❯</a>
-    </div>
-  </div>
-</div>
-
-
-
-<!-- end hero -->
-
- <!-- menu -->
- <h1 class="text-center mt-60 font-bold text-4xl text-primary">Menu</h1>
- <div class="mt-20 pb-20">
-  <div class="container flex justify-between">
-    <div class="relative card w-72 shadow-xl">
-        <figure><img src="dist/img/iceBlue.png" alt="Shoes" /></figure>
-        <h1 class="absolute right-0 bottom-0 text-1xl text-slate-50 font-bold bg-pink-700 p-2 rounded-md">Ice Blue </h1>
-        <p class="absolute left-0 top-0 p-2 shadow-sm rounded-e-md bg-pink-700 font-bold text-white">New</p>
-    </div>
-
-    <div class="relative card w-72 shadow-xl">
-        <figure><img src="dist/img/icePink2.png" alt="Shoes" /></figure>
-        <h1 class="absolute right-0 bottom-0 text-1xl text-slate-50 font-bold bg-pink-700 p-2 rounded-md">Ice Blue </h1>
-        <p class="absolute left-0 top-0 p-2 shadow-sm rounded-e-md bg-pink-700 font-bold text-white">New</p>
-    </div>
-
-    <div class="relative card w-72 shadow-xl">
-        <figure><img src="dist/img/iceBlue.png" alt="Shoes" /></figure>
-        <h1 class="absolute right-0 bottom-0 text-1xl text-slate-50 font-bold bg-pink-700 p-2 rounded-md">Ice Blue </h1>
-        <p class="absolute left-0 top-0 p-2 shadow-sm rounded-e-md bg-pink-700 font-bold text-white">New</p>
-    </div>
-</div>
-
-   </div>
- </div>
- <!-- end menu  -->
- 
- 
+    <!-- end Vanilla  -->
 
 
 
 
 
-    
- <!-- footer -->
 
- <footer class="footer p-10  bg-pink-500 mt-60 text-white">
-  <aside class="lg:ml-20 md:ml-0">
-    <span class="text-slate-50 block font-bold text-dark text-4xl mt-1 lg:text-5xl mb-5">IceDen</span>
-    <p>&copy CopyRight 2022<br/>By Adent Fallah Amorisyah</p>
-  </aside> 
-  <nav>
-    <header class="footer-title">Services</header> 
-    <a class="link link-hover">lorem</a>
-    <a class="link link-hover">lorem</a>
-    <a class="link link-hover">lorem</a>
-    <a class="link link-hover">lorem</a>
-  </nav> 
-  <nav>
-    <header class="footer-title">Link</header> 
-    <a href="#about" class="link link-hover">About</a>
-    <a href="menu.html" class="link link-hover">Menu</a>
-    <a href="#testimonial" class="link link-hover">Testimonial</a>
-    <a href="#contact" class="link link-hover">Contact</a>
-  </nav> 
-  <nav>
-    <header class="footer-title">Legal</header> 
-    <a class="link link-hover">Terms of use</a>
-    <a class="link link-hover">Privacy policy</a>
-    <a class="link link-hover">Cookie policy</a>
-  </nav>
-</footer>
+    <!-- end menu -->
 
-<!-- end footer -->
-</body>
+    <!-- footer -->
+
+    <footer class="footer p-10 bg-pink-500 mt-60 text-white">
+      <aside class="lg:ml-20 md:ml-0">
+        <span
+          class="text-slate-50 block font-bold text-dark text-4xl mt-1 lg:text-5xl mb-5"
+          >IceDen</span
+        >
+        <p>&copy CopyRight 2022<br />By Adent Fallah Amorisyah</p>
+      </aside>
+      <nav>
+        <header class="footer-title">Services</header>
+        <a class="link link-hover">lorem</a>
+        <a class="link link-hover">lorem</a>
+        <a class="link link-hover">lorem</a>
+        <a class="link link-hover">lorem</a>
+      </nav>
+      <nav>
+        <header class="footer-title">Link</header>
+        <a href="#about" class="link link-hover">About</a>
+        <a href="menu.html" class="link link-hover">Menu</a>
+        <a href="#testimonial" class="link link-hover">Testimonial</a>
+        <a href="#contact" class="link link-hover">Contact</a>
+      </nav>
+      <nav>
+        <header class="footer-title">Legal</header>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav>
+    </footer>
+
+    <!-- end footer -->
+  </body>
 </html>
